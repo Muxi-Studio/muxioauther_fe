@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>木犀注册页</title>
+	<link rel="stylesheet" type="text/css" href="../../static/css/register.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>木犀登陆页</title>
+	<link rel="stylesheet" type="text/css" href="../../static/css/register.css">
+</head>
+<body>
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">	
+    <symbol viewBox="0 0 303 35" id="rbt">
+        <g id="rbt-Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="rbt-登录页" transform="translate(-568.000000, -889.000000)" stroke="#9B9B9B">
+                <g id="rbt-白色标底-+-－" transform="translate(0.000000, 860.000000)">
+                    <g id="rbt-－" transform="translate(565.000000, 31.000000)">
+                        <g id="rbt-小兔子分割线" transform="translate(4.000000, 0.000000)">
+                            <path d="M137.608714,21.2574552 C137.944897,21.2574552 138.217427,20.9759643 138.217427,20.6287276 C138.217427,20.2814909 137.944897,20 137.608714,20 C137.27253,20 137,20.2814909 137,20.6287276 C137,20.9759643 137.27253,21.2574552 137.608714,21.2574552 L137.608714,21.2574552 Z M148.391286,21.2574552 C148.72747,21.2574552 149,20.9759643 149,20.6287276 C149,20.2814909 148.72747,20 148.391286,20 C148.055103,20 147.782573,20.2814909 147.782573,20.6287276 C147.782573,20.9759643 148.055103,21.2574552 148.391286,21.2574552 L148.391286,21.2574552 Z M143.422954,26.0151331 L144.944738,25.0327462 L141.901169,25.0327462 L143.422954,26.0151331 L143.422954,26.0151331 Z M143.175461,32 L143.665578,32 L143.665578,26.0392955 L143.175461,26.0392955 L143.175461,32 Z" id="rbt-Oval-10-Copy-2" stroke-width="0.65" fill="#9B9B9B">
+                            </path>
+                            <path d="M175.405809,24.7335155 C175.629931,24.7335155 175.811618,24.5693125 175.811618,24.3667578 C175.811618,24.164203 175.629931,24 175.405809,24 C175.181687,24 175,24.164203 175,24.3667578 C175,24.5693125 175.181687,24.7335155 175.405809,24.7335155 L175.405809,24.7335155 Z M182.594191,24.7335155 C182.818313,24.7335155 183,24.5693125 183,24.3667578 C183,24.164203 182.818313,24 182.594191,24 C182.370069,24 182.188382,24.164203 182.188382,24.3667578 C182.188382,24.5693125 182.370069,24.7335155 182.594191,24.7335155 L182.594191,24.7335155 Z M179.281969,27.5088277 L180.296492,26.9357686 L178.267446,26.9357686 L179.281969,27.5088277 L179.281969,27.5088277 Z M179.116974,31 L179.443719,31 L179.443719,27.5229224 L179.116974,27.5229224 L179.116974,31 Z" id="rbt-Oval-10-Copy-3" stroke-width="0.65">
+                            </path>
+                            <use id="rbt-Rectangle-17-Copy-3" mask="url(#rbt-mask-2)" stroke-width="2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rbt-path-1">
+                            </use>
+                            <use id="rbt-Rectangle-17-Copy-4" mask="url(#rbt-mask-4)" stroke-width="2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rbt-path-3">
+                            </use>
+                            <path d="M0.974111117,32 L300.974111,32" id="rbt-Line" stroke-width="2" stroke-linecap="square">
+                            </path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+</svg>
+</html>
+<div class="registe_box margin_b margin_auto" id="register_cont">
+	<div class="space">
+		<span class="register">注册</span>
+		<div class="login">已有账户？<a href="login.html">返回登录</a></div>
+	</div>
+		<form action="***" method="get">
+			<div class="must margin_auto">
+				<div class="input_warpper">
+					<input class="input" v-bind:class="email.classObj" v-model="email.val" v-on:focus="initHint" v-on:blur="checkEmail" type="text" id="email" name="e-mail" placeholder="登录邮箱" />
+					<div class="hint" v-bind:class="email.classObj">{{ email.hint }}</div>
+				</div>
+				<div class="input_warpper">
+					<input class="input" v-bind:class="username.classObj" v-on:focus="initHint" v-model="username.val" v-on:blur="checkUsername" type="text" id="username" name="name" placeholder="用户名（3-12字符，包括字母/数字/下划线）" />
+					<div class="hint" v-bind:class="username.classObj">{{ username.hint }}</div>
+				</div>
+				<div class="input_warpper">
+					<input class="input" v-bind:class="password.classObj" v-on:focus="initHint" v-on:blur="checkPassword" v-model="password.val" type="text" id="password" name="password" placeholder="设置密码" />
+					<div class="hint" v-bind:class="password.classObj">{{ password.hint }}</div>
+				</div>
+				<div class="input_warpper">
+					<input class="input" v-bind:class="repassword.classObj" v-on:focus="initHint" v-on:blur="checkRePassword" type="text"  v-model="repassword.val" id="repassword" name="ident" placeholder="确认密码" />
+					<div class="hint" v-bind:class="repassword.classObj">{{ repassword.hint }}</div>
+				</div>
+			</div>
+			<input class="submit cp margin_auto" id="submit" type="button" value="马上注册"/>
+		</form>
+</div>
+<div class="footer">
+    <div class="copyright tc">
+    	<div class="about">
+	        <svg class="robbit">
+	            <use xlink:href="#rbt"/>
+	        </svg>
+	        <div>
+		        <span class="muxi">MUXI STUDIO</span>
+		        <span class="line"></span>
+		        <span>华中师范大学木犀团队</span>
+	        </div>
+	    </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../static/js/register.bundle.js"></script>
+</body>
+</html>

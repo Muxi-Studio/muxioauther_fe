@@ -1,0 +1,45 @@
+/***
+ xueer footer.scss
+ authored by zindex
+***/
+
+.footer {
+    width: 100%;
+    min-width: 1000px;
+    border-top: 1px solid $font_grey_deep;
+    font-size: 16px;
+    color: $main_white;
+    position: absolute;
+    bottom: 0;
+}
+.footer {
+    .copyright {
+        text-align: center;
+        height:120px;
+        background-color: $font_black_deep;
+    }
+    .robbit{
+        width: 301px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .about{
+        padding-top: 30px;
+        font-family: PingFang SC;
+        font-size: 14px;
+        color: #9B9B9B;
+        font-weight: lighter;
+        .muxi{
+            letter-spacing: 5px;
+            word-spacing: 5px;
+        }
+        .line{
+            width: 3px;
+            height: 10px;
+            display: inline-block;
+            background: $font_red_deep;
+            border-radius: 1.5px;
+            margin:0 10px;
+        }
+    }
+}

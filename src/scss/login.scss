@@ -1,0 +1,129 @@
+/*
+login.scss
+*/
+
+@import "./common.scss";
+@import "./reset.scss";
+@import "./class.scss";
+@import "./footer.scss";
+.login_content{
+	width: 1000px;
+	height: 900px;
+	background: $bg_grey_color;
+	form{
+		input{
+			height: 40px;
+			width: 240px;
+			line-height: 40px;
+			box-sizing:border-box;
+			margin: 10px 0;
+		}
+		input[type=text] {
+			font-size: 18px;
+			color: $font_black_middle;
+			padding: 0px 15px;
+			border: 1px solid $font_black_middle;
+		}
+		input[type=submit] {
+			background: $font_red_deep;
+			color: $main_white;
+			font-size: 18px;
+			margin-top: 25px;
+			cursor: pointer;
+		}
+		.forget{
+			line-height: 20px;
+			text-align: right;
+			color: $font_red_deep;
+		}
+	}
+	.login {
+	    width: 1000px;
+	    height:676px;
+	    position: absolute;
+	   	bottom: 55px;
+	    line-height: 26px;
+	}
+	.content{
+		padding: 30px 50px;
+		height: 426px;
+		width: 340px;
+		background: $main_white;
+		position: absolute;
+		right: 140px;
+		bottom: 295px;
+		box-sizing:border-box;
+		box-shadow: 5px 1px 0px #CDCDCD;
+	}
+	.band {
+		width: 48px;
+		height: 70px;
+		position: absolute;
+		top: -35px;
+		left: 146px;
+	}
+	.band_t,
+	.band_b {
+		height: 50%;
+		background: $border_grey;
+	}
+	.band_b {
+		opacity: .3;
+	}
+	.folder{
+		width: 92px;
+		height: 60px;
+		position: absolute;
+		bottom: -3px;
+		right: -4px;
+	}
+	.cactus{
+		width: 85px;
+		height: 135px;
+		position: absolute;
+		bottom: -76px;
+		left: -10px;
+	}
+	.trg{
+		width: 94px;
+		height: 52px;
+		box-sizing: border-box;
+		border-bottom: 26px solid $bg_yellow_light;
+		border-top: 26px solid transparent;
+		border-left: 47px solid transparent;
+		border-right: 47px solid $bg_yellow_light;
+		position: absolute;
+		bottom: -1px;
+		right: -5px;
+	}
+	p.bottom_line{
+		text-align: center;
+		color: $font_blue_middle;
+		font-size: 12px;
+		font-weight: light;
+		margin: 40px 42px 10px 0px;
+			a{
+				font-size: 16px;
+				font-weight: bold;
+				color: $font_red_deep;
+			}
+		}
+	.login>svg {
+		width:1002px;
+		height:676px;
+		position: absolute;
+	    bottom: 0;
+	}
+	.log_option{
+		margin: 40px 0 20px;
+		p{
+			color: $font_grey_light;
+			font-size: 18px;
+		}
+		p span{
+			display: inline-block;
+			border-bottom: solid 2px $main_white;
+
+		}
+	}
+}

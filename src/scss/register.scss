@@ -1,0 +1,89 @@
+/*
+register.scss
+*/
+
+@import "./common.scss";
+@import "./reset.scss";
+@import "./class.scss";
+@import "./footer.scss";
+.registe_box {
+    width: 1000px;
+    box-sizing: border-box;
+    padding: 70px 80px 410px;
+    background: $main_white;
+    form {
+        padding-top: 40px;
+        font-size: 24px;
+        span {
+            height: 40px;
+            line-height: 40px;
+            width: 138px;
+        }
+    }
+    input.submit {
+        width: 280px;
+        height: 50px;
+        display: block;
+        color: $main_white;
+        text-align: center;
+        margin-top: 37px;
+        background-color: $main_green;
+        font-size: 20px;
+    }
+    .register {
+        width: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        color: $font_black_middle;
+        border-left: 5px solid $font_red_deep;
+        font-size: 18px;
+        line-height: 20px;
+        padding-left: 10px;
+    }
+    .login {
+        width: 50%;
+        display: inline-block;
+        text-align: right;
+        color: $font_blue_middle;
+        font-size: 12px;
+        a {
+            font-size: 18px;
+            color: #ec6941;
+        }
+    }
+    .must {
+        width: 450px;
+        span{
+            color: $main_green;
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            color: $font_black_middle;
+            font-size: 16px;
+            border: solid 1px;
+            padding: 0px 10px;
+        }
+        .hint {
+            height: 17px;
+            font-size: 12px;
+            text-align: right;
+            padding: 10px 5px;
+        }
+        .input.right {
+            border-color: $main_green;
+        }
+        .hint.right {
+            color: $main_green;
+        }
+        .input.wrong {
+            border-color: $font_red_deep;
+        }
+        .hint.wrong {
+            color: $font_red_deep;
+        }
+    }
+}
+
+
