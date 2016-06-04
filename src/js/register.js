@@ -46,13 +46,13 @@ new Vue({
       var test=/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}/.test(this.email.val),
       item='email'
       this.checkMsg(test,item)
-      emailExist()
+      this.emailExist()
     },
     checkUsername: function(){
       var test=/^[a-zA-Z0-9_]{4,16}$/.test(this.username.val),
       item='username'
       this.checkMsg(test,item)
-      usernameExist()
+      this.usernameExist()
     },
     checkPassword: function(){
       var test=/^[a-zA-Z0-9_]{6,16}$/.test(this.password.val),
