@@ -16,6 +16,7 @@ var devConfig = {
 	output: {
 		filename: "[name].bundle.js",
 		path: path.join(__dirname,'../static/js'),
+		publicPath: "./src/html",
 	},
 	module: {
 		loaders: [

@@ -5,7 +5,14 @@ login.scss
 @import "./common.scss";
 @import "./reset.scss";
 @import "./class.scss";
+@import "./header.scss";
 @import "./footer.scss";
+
+/***
+ xueer header.scss
+ authored by zindex
+***/
+
 .login_content{
 	width: 1000px;
 	height: 900px;
@@ -24,7 +31,7 @@ login.scss
 			padding: 0px 15px;
 			border: 1px solid $font_black_middle;
 		}
-		input[type=submit] {
+		input[type=button] {
 			background: $font_red_deep;
 			color: $main_white;
 			font-size: 18px;

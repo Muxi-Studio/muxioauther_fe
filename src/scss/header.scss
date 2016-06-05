@@ -1,0 +1,14 @@
+
+.header {
+    height:80px;
+    border-bottom: 1px solid $border_grey;
+    background: $main_white;
+}
+.container {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: middle;
+    color: $font_black_middle;
+    padding: 25px 0;
+}
